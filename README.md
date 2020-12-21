@@ -13,25 +13,29 @@ Contents:
 
 What is machine learning (ML) and how does it work?
 
-Machine learning is a subset of Artificial Intelegence (AI). At this point in time, machine learning algorithms are everywhere. They areguiding user recommendations on media platforms like Netflix and YouTube. They are detecting fraudulent transactions. They are tracking and predicting your shopping trends. They are deciding who gets interviewed for jobs. But how do they work - how do machines learn?
+Machine learning is a subset of Artificial Intelegence (AI). At this current moment in time, machine learning algorithms can be found in almost all areas of society. They are guiding users' recommendations on media platforms like Netflix and YouTube. They are detecting fraudulent transactions; tracking and predicting your shopping trends; and performing financial market analysis. They are automatically filtering candidates before job interviews. But how do they work - how do machines learn?
 
 A definition:
 
 > Machine learning algorithms are algorithms that improve automatically through experience. [^1]
 
-Traditional computer algorithms work more like following a set of instructions, taking an input and producing an output. The example often used to illustrate this is that of baking a cake. You have your inputs - the ingredients; the set of instructions - the recipe, and finally you have your output - a cake.
+Traditional computer algorithms work more like a set of instructions that take in an input and produce an output. This is similar to a recipe in baking a cake. The inputs are the ingredients, the algorithm is the recipe, and the output is the baked cake.
 
-ML makes use of algorithms that take a set of input data, analyse the data, and use the analysis to produce/predict a measurable output. New data is input to the ML algorithm, and it optimises its operations. The more times this process is repeated, the greater the degree of optimasation of the ML algorithm.
+```
+function <- bake_cake(ingredients) {
+    cake_mix_measured <- measure(ingredients)
+    cake_mix_mixed <- mix(cake_mix_measured)
+    return(bake(cake_mix_mixed))
+}
+```
+
+ML algorithms differ from conventional algorithms in that the instructions are not explicitly coded. The ML algorithm is not told exactly how to produce a certain output, but is instead trained on what an expected output would be if given a specific input. There are many ways to "teach" a machine learning algorithm. One of the ways is supervised learning:
 
 ### Supervised learning
 
-In supervised learning, the ML algorithm is "taught" by example. The ML algorithm is provided with labelled data from a training (example) dataset, with input-output pairs. and the expected outputs (success criteria). The ML algorithm must find a method to determine how to produce the desired output. The algorithm is then corrected by the developer. This process of feeding and tuning the algorithm is repeated.
+In supervised learning, the ML algorithm is taught by example. The ML algorithm is provided with labelled data from a training (example) dataset, with input-output pairs. and the expected outputs. The ML algorithm must find a method to determine how to produce the desired output. The algorithm is then corrected by the developer. This process of feeding and tuning the algorithm is repeated.
 
 There are other types of machine learning are: unsupervised learning, reinforcement learning, and semi-supervised learning. This presentation will only focus on avoiding bias in supervised learning.
-
-* potential to introduce you to a new type of cake based on your preferences
-* work out how much weight you put on the uses/quantitiies of certain ingredients
-* you never need to explicitly code a recipe
 
 Advancements in technology, specifically in computational power and data storage, mean that it's easier to run and train ML algorithms over larger and larger sets of data. 
 
