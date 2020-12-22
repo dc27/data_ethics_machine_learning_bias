@@ -21,8 +21,8 @@ A definition:
 
 Traditional computer algorithms work more like a set of instructions that take in an input and produce an output. This is similar to a recipe in baking a cake. The inputs are the ingredients, the algorithm is the recipe, and the output is the baked cake.
 
-```
-function <- bake_cake(ingredients) {
+```{r}
+bake_cake <- function(ingredients) {
     cake_mix_measured <- measure(ingredients)
     cake_mix_mixed <- mix(cake_mix_measured)
     return(bake(cake_mix_mixed))
@@ -41,30 +41,21 @@ Advancements in technology, specifically in computational power and data storage
 
 ## Sources of bias
 
-People associate and promote machines as unbiased decision makers. As uncaring, impar
+While people often associate computer algorithms as unbiased and impartial decision makers, they are vulnerable to many sources of biases. Importantly, algorithms will not remove existing bias, only reflect and perpetuate it.
 
-Algorithms will not remove existing bias, only reflect and perpetuate it.
-
-
-There are three main sources of bias in ML algorithms - **Technical** bias relating to software or hardware limitations; **Established** bias relating to bias that exists within the data; and **Emergent** bias which relates to bias in the success criteria.
+There are three main sources of bias in ML algorithms - **Technical** bias relating to software or hardware limitations; **Established** bias relating to bias that exists within the training data; and **Emergent** bias which relates to bias in the success criteria.
 
 ### Technical bias
 
-
+Technical bias is associated with the limitations of the system. If your algorithm is only able to look at the first thousand rows of a dataset that contains millions, or if your face recognition technology can only examine a certain degree, then you are likely to get an incorrect and possibly biased product as a result.
 
 ### Established bias
 
-It's not the algorithm that's biased, it's your training data.
+Bias may already exist within the training data.
 
 ### Emergent bias
 
 What is your success criteria? If Facebook wants to keep you engaged, it's only going to favour content that you spend time looking at.
-
-Sometimes, decisions made by systems aimed at personalization will end up creating bias "bubbles" around us. We can look no further than the current state of Facebook to see this bias at play. At the top layer, Facebook users see the posts of their friends and can share information with them. Unfortunately, any algorithm that uses analysis of a data feed to then present other content will provide content that matches the idea set that a user has already seen. This effect is amplified as users open, like, and share content. The result is a flow of information that is skewedd toward a user's existing belief set.
-
-while it is certainly personalized, and often reassuring, it is no longer what we would tend to think of as news. It is a bubble of information that is an algorithmic version of "confirmation bias." Users don't have to shielf themselves from information that conflicts with their beliefs because the system is automatically doing it for them.
-
-The impace of these information biases on the world of news is troubling. But as we look to social media models as a way to support decision making in the enterprise, systems that support the emergence of information bubbles have the potential to skey our thinking. A knowledge worker who is only getting information from people who think like them will never see contrasting points of view and will tend to ignore and deny alternatives.
 
 ## Removing existing bias
 
@@ -79,11 +70,9 @@ Since another potential source of bias is established bias, the training data sh
 Be aware of the potential sources of bias - technical, established, emergent.
 
 * Include transparency in results  
-* Consider carefully your success criteria  
+* Consider carefully your success criteria
+* Identify sources of bias within training data and account for them 
 * Find for whom the algorithm fails 
-
-
-Technical bias: increase algorithm transparency. Test edge cases.
 
 
 [^1]: https://en.wikipedia.org/wiki/Machine_learning
