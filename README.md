@@ -43,7 +43,7 @@ Advancements in technology, specifically in computational power and data storage
 
 While people often associate computer algorithms as unbiased and impartial decision makers, they are vulnerable to many sources of biases. Importantly, algorithms will not remove existing bias, only reflect and perpetuate it.
 
-There are three main sources of bias in ML algorithms - **Technical** bias relating to software or hardware limitations; **Established** bias relating to bias that exists within the training data; and **Emergent** bias which relates to bias in the success criteria.
+There are three main sources of bias in ML algorithms - **technical** bias which relates to software or hardware limitations; **established** bias which relates to bias that exists within the training data; and **emergent** bias which relates to bias created by the success criteria.
 
 ### Technical bias
 
